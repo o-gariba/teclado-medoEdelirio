@@ -26,7 +26,15 @@ function tocaSomAlura(seletorAudio) {
     const elemento = document.querySelector(seletorAudio);
 
     if (elemento === null || elemento.localName !== 'audio') console.log('Elemento inválido');
-    else elemento.play();
+    else {
+        elemento.play();
+    }
+}
+
+let todosOsAudios = document.querySelectorAll('audio');
+
+function pausaTodosOsAudios() {
+    todosOsAudios.forEach(audio => audio.load());
 }
 
 // function tocaTecla(onclick) {
@@ -44,7 +52,8 @@ for (let contador = 0; contador < listaDeTeclas.length; contador++) {
     const idAudio = `#som_${som}`;
 
     tecla.onclick = function () {
-       tocaSomAlura(idAudio); 
+        pausaTodosOsAudios();
+        tocaSomAlura(idAudio); 
     }
 
     tecla.onkeydown = function(evento) {
