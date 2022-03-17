@@ -52,6 +52,31 @@ h1 {
   width: 120px;
 }
 
+.rodape {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 2rem;
+
+  color: white;
+
+  gap: 1rem;
+
+  justify-content: center;
+  justify-items: center;
+
+  text-align: center;
+}
+
+.botao {
+  border: 1px solid darkgreen;
+  border-radius: 5px;
+
+  padding: .5rem;
+
+  background-color: darkgreen;
+}
+
 .tecla.ativa,
 .tecla:active {
   background-color: var(--vermelha);
@@ -90,5 +115,13 @@ h1 {
   .teclado {
     grid-template-columns: repeat(3, 1fr);
     margin-top: 2rem;
+  }
+
+  .rodape {
+    color: blue;
+  }
+
+  .botao {
+    background-color: lightgreen;
   }
 }
