@@ -8,18 +8,27 @@
 
 body {
   align-items: center;
-  background: linear-gradient(45deg, #a7cfdf 0%,#23538a 100%);
+  /* background: linear-gradient(45deg, #a7cfdf 0%,#23538a 100%); */
+  background-image: url('/images/bandeira-brasil.jpg');
+  /* background-repeat: no-repeat; */
+  background-position: center;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   flex-direction: column;
   font-family: 'Montserrat', sans-serif;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 h1 {
   color: var(--branca);
   margin-bottom: 20px;
   font-size: 2rem;
+  font-weight: 500;
+
+  width: 70%;
+  text-align: center;
+
+  margin-top: 3rem;
 }
 
 .teclado {
@@ -27,9 +36,9 @@ h1 {
   box-shadow: 6px 8px 0 6px #666, 10px 10px 10px #000;
   border-radius: 30px;
   display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 10px;
+  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px;
 }
 
 .tecla {
@@ -38,10 +47,10 @@ h1 {
   box-shadow: 3px 3px 0 var(--cinza);
   color: var(--vermelha);
   cursor: pointer;
-  height: 120px;
-  font-size: 1.75em;
+  height: 110px;
+  font-size: 1rem;
   font-weight: bold;
-  line-height: 120px;
+  /* line-height: 120px; */
   text-align: center;
   width: 120px;
 }
