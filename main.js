@@ -15,7 +15,6 @@ const listaDeTeclas = document.querySelectorAll('.tecla');
 
 // Agora precisamos acessar cada uma das teclas individualmente, para passar o onclick, para isso usamos a notação de array para acessar os elmtos da NodeList.
 
-
     // const listaDeSons = document.querySelectorAll('audio');
 
     // function tocaSom(index) {
