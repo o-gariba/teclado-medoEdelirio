@@ -8,7 +8,7 @@
 
 body {
   align-items: center;
-  background-image: url('/images/bandeira-brasil.jpg');
+  background-image: url('../images/bandeira-brasil.jpg');
   background-position: center;
   display: flex;
   flex-direction: column;
@@ -99,7 +99,7 @@ h1 {
 
 @media screen and (min-width: 900px) {
   body {
-    background-image: url('/images/desktop-background.jpg');
+    background-image: url('../images/desktop-background.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
 
